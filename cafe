@@ -1,0 +1,25 @@
+# This program calculate the total_stock worth in the cafe.
+
+# Menu in the cafe:
+menu = ['espresso', 'americano', 'cappucino', 'cafe latte', 'tea', 'water']
+
+# Stock in the cafe:
+stock = {'espresso': 150,
+         'americano': 120,
+         'cappucino': 115,
+         'cafe latte': 120,
+         'tea': 150,
+         'water': 170}
+
+# Price in the cafe:
+price = {'espresso': 2.00,
+         'americano': 2.50,
+         'cappucino': 4.50,
+         'cafe latte': 5.00,
+         'tea': 3.50,
+         'water': 2.00}
+
+# Calculate the total stock worth in the cafe:
+total_stock = sum(stock[item] * price[item] for item in menu)
+
+print(f'The total stock worth is £{total_stock}.')
